@@ -31,4 +31,4 @@ Help:
 
     Delete one or more jobs
       JOB                 : Job(s) to delete
-    T EAM                : Only within team (optional)
+      TEAM                : Only within team (optional)
