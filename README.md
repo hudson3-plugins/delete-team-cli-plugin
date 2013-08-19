@@ -22,10 +22,10 @@ bounded by ^ and $, and must match the entire job name. For example, "A" will de
 only job A, but ".*A.*" will delete all jobs with a capital A in the name.
 
 The optional TEAM argument restricts deleting to a single team. E.g., to delete
-all jobs in in team MyTeam, <code>delete-job ".*" MyTeam</code>. This is more
+all jobs in in team MyTeam, `delete-job ".*" MyTeam`. This is more
 reliable than deleting based on the team prefix in the job name, as '.' (dot) is
-<i>not</i> a reserved character in job names. The may be a job <code>A.Job</code>
-that is not in team A.
+<i>not</i> a reserved character in job names if one switches out of team mode.
+There may be a public job named A.Job.
 
 Help:
 
