@@ -48,7 +48,7 @@ public class DeleteJobCommand extends CLICommand {
 
     @Argument(metaVar = "JOB", usage = "Job(s) to delete", required=true)
     public String job;
-    @Argument(metaVar = "TEAM", usage = "Only within team", index = 1, required=false)
+    @Argument(metaVar = "TEAM", usage = "Only within team (optional)", index = 1, required=false)
     public String team;
     
     @Override

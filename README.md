@@ -10,8 +10,9 @@ switch to delete the team jobs instead.
 
 Help:
     Delete a team
-     TEAM                : Team to delete
-     -j (--jobs)         : Delete jobs (by default jobs are made public)
+      TEAM                : Team to delete
+      -j (--jobs)         : Delete jobs (by default jobs are made public)
+
 
 delete-job
 ==========
@@ -27,6 +28,5 @@ that is not in team A.
 
 Help:
     Delete one or more jobs
-     JOB                 : Job(s) to delete
-     TEAM                : Only within team (optional)
-
+      JOB                 : Job(s) to delete
+    T EAM                : Only within team (optional)
