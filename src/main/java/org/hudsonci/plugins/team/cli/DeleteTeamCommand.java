@@ -14,6 +14,7 @@ package org.hudsonci.plugins.team.cli;
 import hudson.Extension;
 import hudson.cli.CLICommand;
 import hudson.model.Hudson;
+import hudson.model.Job;
 import hudson.model.TopLevelItem;
 import java.util.Set;
 import org.eclipse.hudson.security.team.Team;
@@ -65,7 +66,11 @@ public class DeleteTeamCommand extends CLICommand {
             Set<String> jobNames = targetTeam.getJobNames();
             for (String job : jobNames) {
                 TopLevelItem item = h.getItem(job);
-                item.delete();
+                if (item != null && item instanceof Job) {
+                    item.delete();
+                } else {
+                    stderr.println("Team "+team+" job "+job+" not found");
+                }
             }
         }
         
